@@ -4,13 +4,13 @@ let computerChoice;
 let choices = ["ROCK","PAPER","SCISSORS"];
 
 // ---------------------------------------------------------------------------------------------------------
-// Function to prompt user for choice: 1 rock, 2 paper, 3 scissors
+// Function to prompt user for choice: 1 for rock, 2 for paper, 3 for scissors
 function promptUser () {
     let getUserChoice;
 
     do {
         getUserChoice = parseInt(prompt("Make selection: 1 for Rock, 2 for Paper, or 3 for Scissors "));
-    } while(!(getUserChoice != 1 || getUserChoice != 2 || getUserChoice != 3))
+    } while(!(getUserChoice == 1 || getUserChoice == 2 || getUserChoice == 3))
     
     if (getUserChoice == 1) {
         return "ROCK";
