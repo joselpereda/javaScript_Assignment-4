@@ -4,7 +4,7 @@ let computerChoice;
 let choices = ["ROCK","PAPER","SCISSORS"];
 
 // ---------------------------------------------------------------------------------------------------------
-// Function to prompt user for chose - 1 rock, 2 paper, 3 scissors
+// Function to prompt user for choice: 1 rock, 2 paper, 3 scissors
 function promptUser () {
     let getUserChoice;
 
