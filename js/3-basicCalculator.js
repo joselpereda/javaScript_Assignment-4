@@ -5,7 +5,7 @@ let operandChoice;
 let operandChoiceUpper;
 
 // IMPORT THE MODULE
-import * as calculate from "./modules/calculator.js";
+import * as calc from "./modules/calculator.js";
 
 // Prompt user for first number
 do {
@@ -36,16 +36,16 @@ do {
 //evaluate the operation parameter being passed and perform the appropriate operation
 switch (operandChoiceUpper) {
     case "ADD":
-        alert(`${number1} + ${number2} = ${calculate.add(number1, number2)}`);
+        alert(`${number1} + ${number2} = ${calc.add(number1, number2)}`);
         break;
     case "DIVIDE":
-        alert(`${number1} / ${number2} = ${calculate.divide(number1, number2)}`);
+        alert(`${number1} / ${number2} = ${calc.divide(number1, number2)}`);
             break;
     case "MULTIPLY":
-        alert(`${number1} x ${number2} = ${calculate.multiply(number1, number2)}`);
+        alert(`${number1} x ${number2} = ${calc.multiply(number1, number2)}`);
         break;
     case "SUBTRACT":
-        alert(`${number1} - ${number2} = ${calculate.subtraction(number1, number2)}`);
+        alert(`${number1} - ${number2} = ${calc.subtraction(number1, number2)}`);
         break;
     default:
         alert("No match!")
