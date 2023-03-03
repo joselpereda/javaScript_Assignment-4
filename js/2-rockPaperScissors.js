@@ -36,7 +36,7 @@ do {
     computerChoice = computerSelection(choices);
 
     if (userChoice === computerChoice) {
-        alert("It's a tie! Sorry, nobody won!");
+        alert ("It's a tie! Sorry, nobody won!");
     } else if (((userChoice === "SCISSORS") && (computerChoice === "PAPER")) || ((userChoice === "PAPER") && (computerChoice === "ROCK")) || ((userChoice === "ROCK") && (computerChoice === "SCISSORS"))) {
         alert("The HUMAN won!");
     } else {
