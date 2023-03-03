@@ -35,6 +35,7 @@ do {
     // Determine computer selection
     computerChoice = computerSelection(choices);
 
+    // Determine who won and display appropriate message
     if (userChoice === computerChoice) {
         alert ("It's a tie! Sorry, nobody won!");
     } else if (((userChoice === "SCISSORS") && (computerChoice === "PAPER")) || ((userChoice === "PAPER") && (computerChoice === "ROCK")) || ((userChoice === "ROCK") && (computerChoice === "SCISSORS"))) {
@@ -43,4 +44,5 @@ do {
         alert("The COMPUTER won! :(")
     }
 
+    // If it was a tie, cycle through look once again and prompt user for another selection
 } while (userChoice === computerChoice)
