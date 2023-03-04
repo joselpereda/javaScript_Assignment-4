@@ -5,12 +5,12 @@ let operandChoice;
 let operandChoiceUpper;
 
 // IMPORT THE MODULE
-*import * as calc from "./modules/calculator.js"; 
+import * as calc from "./modules/calculator.js"; 
 
 // Prompt user for first number
-do {
+//do {
     number1 = Number(prompt("Enter the first number:"));
-} while (typeof(number1) !== "number")
+//} while (typeof(number1) !== "number")
 
 // Prompt user for second number
 /*do {
@@ -34,7 +34,7 @@ do {
 } while (true);
 */
 //evaluate the operation parameter being passed and perform the appropriate operation
-switch (operandChoiceUpper) {
+/*switch (operandChoiceUpper) {
     case "ADD":
         alert(`${number1} + ${number2} = ${calc.add(number1, number2)}`);
         break;
@@ -50,4 +50,4 @@ switch (operandChoiceUpper) {
     default:
         alert("No match!")
         break;                 
-}
+} */
