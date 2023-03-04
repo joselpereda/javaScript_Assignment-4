@@ -29,6 +29,7 @@ function computerSelection(choices) {
 }
 
 // ---------------------------------------------------------------------------------------------------------
+// Main code
 do {
     // Prompt user for selection
     userChoice = promptUser();
