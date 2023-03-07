@@ -10,11 +10,11 @@ function squareNumber(numToSquare) {
 }
 console.log(squareNumber(7));
 
-// //STEP 3
+//STEP 3
 function percentOf(num1, num2) {
     return `${num1} is ${num1/num2 * 100}% of ${num2}.`;
 }
-// console.log(percentOf(25,100));
+console.log(percentOf(25,100));
 
 //STEP 4
 function findModulus(x, y) {
