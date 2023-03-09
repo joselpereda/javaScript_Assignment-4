@@ -1,31 +1,50 @@
-// ADD A PRIVATE FUNCTION CALLED CALCULATE
-/*(function calculate() {
-    'use strict';
-}) (); */
+// Global variables (best practice)
+let total = 0;
 
-// ADD FOUR PUBLIC FUNCTIONS BELOW
-// ADD FUNCTION
-const add = (x,y) => {
-    return x + y
+// Adding private function per assignment requirements
+const calculate = (x, y, operation) => {
+    switch (operation) {
+        case 'add':
+            return x + y;
+            break;
+        case 'subtract':
+            return x - y;
+            break;
+        case 'multiply':
+            return x * y;
+            break;
+        case 'divide':
+            return x / y;
+            break;
+        default: 
+            return 0;
+    }
+};
+//--------------------------------------------------------------
+// Define the public functions
+// Code for Add function
+const add = (x, y) => {
+    total = calculate(x, y, 'add');
+    return total;
 }
-
-// SUBTRACT FUNCTION
-const subtraction = (x,y) => {
-    return x - y
+// Code for Subtract function
+const subtract = (x, y) => {
+    total = calculate(x, y, 'subtract');
+    return total;
 }
-
-// MULTIPLY FUNCTION
-const multiply = (x,y) => {
-    return x * y
+// Code for multiply function
+const multiply = (x, y) => {
+    total = calculate(x, y, 'multiply');
+    return total;
 }
-
-// DIVIDE FUNCTION
-const divide = (x,y) => {
-    return x / y
+// Code for divide function
+const divide = (x, y) => {
+    total = calculate(x, y, 'divide');
+    return total;
 }
- 
-// EXPORT THE FOUR PUBLIC FUNCTIONS
-export {add};
-export {subtraction};
+//--------------------------------------------------------------
+// Export the functions
+export  {add};
+export  {subtract};
 export {multiply};
 export {divide};
