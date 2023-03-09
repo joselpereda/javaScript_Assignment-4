@@ -1,26 +1,29 @@
 // IMPORT THE MODULE
 import calc from './modules/calculator.js';
 
-// COLLECT NUMBER 1, NUMBER 2, AND OPERATION FROM THE USER
-let num1 = parseInt(prompt('Enter the first number.'));
-let num2 = parseInt(prompt('Enter the second number.'));
-let method = prompt('How do you want to calculate these values? (add/subtract/multiply/divide)');
+// Prompt user for first number (assign value to variable number1)
+let number1 = parseInt(prompt('Enter the first number.'));
 
-// CHECK TO SEE WHAT OPERATION THEY'RE USING
-// CALL THE APPROPRIATE FUNCTION
-switch (method) {
+// Prompt user for second number (assign value to variable number2)
+let number2 = parseInt(prompt('Enter the second number.'));
+
+// Prompt user for an operation type 
+let operation = prompt('Which operation would you like to perform? (add, subtract, multiply, divide) ');
+
+// Check what operation was specified
+switch (operation) {
     case 'add':
-        console.log(calc.add(num1, num2));
+        console.log(calc.add(number1, number2));
         break;
     case 'subtract':
-        console.log(calc.subtract(num1, num2));
+        console.log(calc.subtract(number1, number2));
         break;
     case 'multiply':
-        console.log(calc.multiply(num1, num2));
+        console.log(calc.multiply(number1, number2));
         break;
     case 'divide':
-        console.log(calc.divide(num1, num2));
+        console.log(calc.divide(number1, number2));
         break;
     default:
-        alert('You did not enter a correct method. Try again.');
+        alert('You did not enter a valid operation. Give it another try.');
 }
